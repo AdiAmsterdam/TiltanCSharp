@@ -1,0 +1,14 @@
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\bin\Debug\net10.0\Lesson03.exe
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\bin\Debug\net10.0\Lesson03.deps.json
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\bin\Debug\net10.0\Lesson03.runtimeconfig.json
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\bin\Debug\net10.0\Lesson03.dll
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\bin\Debug\net10.0\Lesson03.pdb
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\obj\Debug\net10.0\Lesson03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\obj\Debug\net10.0\Lesson03.AssemblyInfoInputs.cache
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\obj\Debug\net10.0\Lesson03.AssemblyInfo.cs
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\obj\Debug\net10.0\Lesson03.csproj.CoreCompileInputs.cache
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\obj\Debug\net10.0\Lesson03.dll
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\obj\Debug\net10.0\refint\Lesson03.dll
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\obj\Debug\net10.0\Lesson03.pdb
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\obj\Debug\net10.0\Lesson03.genruntimeconfig.cache
+C:\Users\adiam\RiderProjects\CSharp2026Spring\Lesson03\obj\Debug\net10.0\ref\Lesson03.dll
