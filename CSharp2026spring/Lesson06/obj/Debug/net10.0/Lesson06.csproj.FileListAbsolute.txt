@@ -1,0 +1,15 @@
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\Lesson06.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\Lesson06.AssemblyInfoInputs.cache
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\Lesson06.AssemblyInfo.cs
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\Lesson06.csproj.CoreCompileInputs.cache
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\Lesson06.sourcelink.json
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\bin\Debug\net10.0\Lesson06.exe
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\bin\Debug\net10.0\Lesson06.deps.json
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\bin\Debug\net10.0\Lesson06.runtimeconfig.json
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\bin\Debug\net10.0\Lesson06.dll
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\bin\Debug\net10.0\Lesson06.pdb
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\Lesson06.dll
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\refint\Lesson06.dll
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\Lesson06.pdb
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\Lesson06.genruntimeconfig.cache
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\Lesson06\obj\Debug\net10.0\ref\Lesson06.dll

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\Lesson03\\Lesson03.csproj",
+      "projectUniqueName": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson03\\Lesson03.csproj",
       "projectName": "Lesson03",
-      "projectPath": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\Lesson03\\Lesson03.csproj",
+      "projectPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson03\\Lesson03.csproj",
       "packagesPath": "C:\\Users\\adiam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\Lesson03\\obj\\",
+      "outputPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adiam\\AppData\\Roaming\\NuGet\\NuGet.Config"

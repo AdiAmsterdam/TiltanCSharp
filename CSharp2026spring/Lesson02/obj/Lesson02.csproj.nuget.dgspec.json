@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\Lesson02\\Lesson02.csproj": {}
+    "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson02\\Lesson02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\Lesson02\\Lesson02.csproj": {
+    "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson02\\Lesson02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\Lesson02\\Lesson02.csproj",
+        "projectUniqueName": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson02\\Lesson02.csproj",
         "projectName": "Lesson02",
-        "projectPath": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\Lesson02\\Lesson02.csproj",
+        "projectPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson02\\Lesson02.csproj",
         "packagesPath": "C:\\Users\\adiam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\Lesson02\\obj\\",
+        "outputPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adiam\\AppData\\Roaming\\NuGet\\NuGet.Config"

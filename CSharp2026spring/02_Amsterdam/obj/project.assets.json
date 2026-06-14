@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\02_Amsterdam\\02_Amsterdam.csproj",
+      "projectUniqueName": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\02_Amsterdam\\02_Amsterdam.csproj",
       "projectName": "02_Amsterdam",
-      "projectPath": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\02_Amsterdam\\02_Amsterdam.csproj",
+      "projectPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\02_Amsterdam\\02_Amsterdam.csproj",
       "packagesPath": "C:\\Users\\adiam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\02_Amsterdam\\obj\\",
+      "outputPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\02_Amsterdam\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adiam\\AppData\\Roaming\\NuGet\\NuGet.Config"

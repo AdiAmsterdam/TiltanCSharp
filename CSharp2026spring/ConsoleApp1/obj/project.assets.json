@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\adiam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adiam\\RiderProjects\\CSharp2026Spring\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adiam\\AppData\\Roaming\\NuGet\\NuGet.Config"
