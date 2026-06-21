@@ -1,0 +1,13 @@
+﻿using CreateCharacter;
+Character Character1 = new Character();
+Character Character2 = new Character();
+Character1.name = "Adi";
+Character1.Class = Characterclass.Warrior;
+Character1.level = 1;
+Character1.health = 1;
+Character2.name = "Eyal";
+Character2.Class = Characterclass.Mage;
+Character2.level = 2;
+Character2.health = 2;
+Character1.PrintStats();
+Character2.PrintStats();

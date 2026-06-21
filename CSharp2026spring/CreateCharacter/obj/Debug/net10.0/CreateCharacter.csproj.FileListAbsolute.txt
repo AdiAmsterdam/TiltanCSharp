@@ -1,0 +1,15 @@
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\CreateCharacter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\CreateCharacter.AssemblyInfoInputs.cache
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\CreateCharacter.AssemblyInfo.cs
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\CreateCharacter.csproj.CoreCompileInputs.cache
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\CreateCharacter.sourcelink.json
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\bin\Debug\net10.0\CreateCharacter.exe
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\bin\Debug\net10.0\CreateCharacter.deps.json
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\bin\Debug\net10.0\CreateCharacter.runtimeconfig.json
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\bin\Debug\net10.0\CreateCharacter.dll
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\bin\Debug\net10.0\CreateCharacter.pdb
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\CreateCharacter.dll
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\refint\CreateCharacter.dll
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\CreateCharacter.pdb
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\CreateCharacter.genruntimeconfig.cache
+C:\Users\adiam\OneDrive\Documents\GitHub\TiltanCSharp\CSharp2026spring\CreateCharacter\obj\Debug\net10.0\ref\CreateCharacter.dll
