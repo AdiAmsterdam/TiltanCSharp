@@ -12,8 +12,8 @@ public class Player
     private Ball hasball = null;
     public int score;
 
-    
-    Player(string name, int height, int weight, bool isOpponent)
+
+    public Player(string name, bool isOpponent)
     {
         if (string.IsNullOrEmpty(name))
         {
@@ -24,12 +24,34 @@ public class Player
             this.stats.name = name;
         }
 
-        this.stats.height = Math.Clamp(height, 160, 220);
-        this.stats.weight = Math.Clamp(weight, 70, 100);
+        this.stats.height = new Random().Next(160, 240);
+        this.stats.weight = new Random().Next(80, 120);
         this.stats.isOpponent = isOpponent;
         this.score = 0;
         
         this.skills.speed =Math.Clamp(30 - CalculateBMI(this.stats.height, this.stats.weight), 1, 10);
+        this.skills.shooting = new Random().Next(40, 95);
+        this.skills.snatching = new Random().Next(40, 95);
+    }
+    public Player(string name, int height, int weight, bool isOpponent)
+    {
+        if (string.IsNullOrEmpty(name))
+        {
+            this.stats.name = "Lebron";
+        }
+        else
+        {
+            this.stats.name = name;
+        }
+
+        this.stats.height = Math.Clamp(height, 160, 240);
+        this.stats.weight = Math.Clamp(weight, 80, 120);
+        this.stats.isOpponent = isOpponent;
+        this.score = 0;
+        
+        this.skills.speed =Math.Clamp(30 - CalculateBMI(this.stats.height, this.stats.weight), 1, 10);
+        this.skills.shooting = new Random().Next(40, 95);
+        this.skills.snatching = new Random().Next(40, 95);
     }
 
     public PlayerStats GetStats()
@@ -57,17 +79,17 @@ public class Player
         return weight / (float)Math.Pow(height, 2);
     }
 
-    void jump()
+    void Jump()
     {
-        Console.WriteLine("Player jumped");
+        Console.WriteLine($"{this.stats.name} jumped");
     }
 
     void Run()
     {
-        Console.WriteLine("the player runs at a speed of: " + (GetSkills().speed));
+        Console.WriteLine($"{this.stats.name} runs at a speed of: {GetSkills().speed}");
     }
 
-    void PassBall(Player teamate)
+    public void PassBall(Player teamate)
     {
         if (!teamate.GetStats().isOpponent && !GetStats().isOpponent && hasball != null)
         {
@@ -78,37 +100,80 @@ public class Player
     
     public void ShootToBasket()
     {
+        Jump();
         int accuracy = new Random().Next(1, 100);
         if (accuracy <= GetSkills().shooting)
         {
-            Console.WriteLine(GetStats().name + "has scored!");
             SetBall(null);
             this.score = this.score + 2;
             if (!GetStats().isOpponent)
             {
+                Console.WriteLine(GetStats().name + " (team) has scored!");
+                Console.WriteLine();
                 teamScore = teamScore + 2;
             }
             else
             {
+                Console.WriteLine(GetStats().name + " (opponent) has scored!");
+                Console.WriteLine();
                 opponentScore = opponentScore + 2;
             }
+            ShowScore();
         }
-        else Console.WriteLine(GetStats().name + "has missed");
+        else
+        {
+            Console.WriteLine(GetStats().name + " has missed");
+            Console.WriteLine();
+        }
     }
     
     
-    public void Snach(Player opponent)
+    public void Snatch(Player opponent)
     {
         if (!GetStats().isOpponent && opponent.GetStats().isOpponent && opponent.GetBall() != null)
         {
+            Run();
             int accuracy = new Random().Next(1, 100);
             if (accuracy <= GetSkills().snatching)
             {
-                Console.WriteLine(GetStats().name + "has snatched the ball");
                 SetBall(opponent.GetBall());
                 opponent.SetBall(null);
-                
+                Console.WriteLine(GetStats().name + " has snatched the ball");
+                Console.WriteLine();
             }
         }
+    }
+
+    public static void ShowScore()
+    {
+        Console.WriteLine($"Score - Team: {teamScore}, Opponent: {opponentScore}");
+    }
+
+    public static void ShowPlayerScore(Player player)
+    {
+        if (player.score == 0)
+        {
+            Console.WriteLine($"{player.stats.name} hasn't scored yet");
+            Console.WriteLine();
+        }
+        else
+        {
+            Console.WriteLine($"{player.stats.name} has scored {player.score} points");
+            Console.WriteLine();
+        }
+    }
+
+    public void PrintStats()
+    {
+        Console.WriteLine($"Name: {this.stats.name}");
+        Console.WriteLine($"Height: {this.stats.height}");
+        Console.WriteLine($"Weight: {this.stats.weight}");
+        Console.WriteLine($"IsOpponent: {this.stats.isOpponent}");
+        Console.WriteLine($"Score: {this.score}");
+        Console.WriteLine($"hasball: {this.hasball}");
+        Console.WriteLine($"Speed: {this.skills.speed}");
+        Console.WriteLine($"Shooting Skill: {this.skills.shooting}");
+        Console.WriteLine($"Snatching Skill: {this.skills.snatching}");
+        Console.WriteLine();
     }
 }
