@@ -15,17 +15,8 @@ public class Player
 
     public Player(string name, bool isOpponent)
     {
-        if (string.IsNullOrEmpty(name))
-        {
-            this.stats.name = "Lebron";
-        }
-        else
-        {
-            this.stats.name = name;
-        }
-
-        this.stats.height = new Random().Next(160, 240);
-        this.stats.weight = new Random().Next(80, 120);
+        this.stats = new PlayerStats(name, isOpponent);
+       
         this.stats.isOpponent = isOpponent;
         this.score = 0;
         
@@ -54,9 +45,13 @@ public class Player
         this.skills.snatching = new Random().Next(40, 95);
     }
 
-    public PlayerStats GetStats()
+    public PlayerStats Stats
     {
-        return this.stats;
+        get
+        {
+            return stats;
+        }
+        
     }
 
     public PlayerSkills GetSkills()
@@ -91,7 +86,7 @@ public class Player
 
     public void PassBall(Player teamate)
     {
-        if (!teamate.GetStats().isOpponent && !GetStats().isOpponent && hasball != null)
+        if (!teamate.stats.isOpponent && !stats.isOpponent && hasball != null)
         {
             teamate.SetBall(hasball);
             SetBall(null);
@@ -106,15 +101,15 @@ public class Player
         {
             SetBall(null);
             this.score = this.score + 2;
-            if (!GetStats().isOpponent)
+            if (!stats.isOpponent)
             {
-                Console.WriteLine(GetStats().name + " (team) has scored!");
+                Console.WriteLine(stats.name + " (team) has scored!");
                 Console.WriteLine();
                 teamScore = teamScore + 2;
             }
             else
             {
-                Console.WriteLine(GetStats().name + " (opponent) has scored!");
+                Console.WriteLine(stats.name + " (opponent) has scored!");
                 Console.WriteLine();
                 opponentScore = opponentScore + 2;
             }
@@ -122,7 +117,7 @@ public class Player
         }
         else
         {
-            Console.WriteLine(GetStats().name + " has missed");
+            Console.WriteLine(stats.name + " has missed");
             Console.WriteLine();
         }
     }
@@ -130,7 +125,7 @@ public class Player
     
     public void Snatch(Player opponent)
     {
-        if (!GetStats().isOpponent && opponent.GetStats().isOpponent && opponent.GetBall() != null)
+        if (!stats.isOpponent && opponent.stats.isOpponent && opponent.GetBall() != null)
         {
             Run();
             int accuracy = new Random().Next(1, 100);
@@ -138,7 +133,7 @@ public class Player
             {
                 SetBall(opponent.GetBall());
                 opponent.SetBall(null);
-                Console.WriteLine(GetStats().name + " has snatched the ball");
+                Console.WriteLine(stats.name + " has snatched the ball");
                 Console.WriteLine();
             }
         }

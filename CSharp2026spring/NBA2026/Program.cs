@@ -26,25 +26,25 @@ ShowTeam(opponent);
 
 
 // Team player shoots
-Console.WriteLine($"{team[0].GetStats().name} attempts a shot...");
+Console.WriteLine($"{team[0].stats.name} attempts a shot...");
 team[0].ShootToBasket();
 
 
 // Give the ball to an opponent
 opponent[0].SetBall(b);
 
-if (opponent[0].GetBall() != null) Console.WriteLine($"{opponent[0].GetStats().name} now has the ball.");
+if (opponent[0].GetBall() != null) Console.WriteLine($"{opponent[0].stats.name} now has the ball.");
 
 
 // Team player attempts to steal
-Console.WriteLine($"{team[1].GetStats().name} attempts to snatch the ball...");
+Console.WriteLine($"{team[1].stats.name} attempts to snatch the ball...");
 team[1].Snatch(opponent[0]);
 
 
 // If the steal was successful, shoot
 if (team[1].GetBall() != null)
 {
-    Console.WriteLine($"{team[1].GetStats().name} goes for the basket...");
+    Console.WriteLine($"{team[1].stats.name} goes for the basket...");
     team[1].ShootToBasket();
 }
 else
@@ -56,7 +56,7 @@ else
 // Opponent tries to score
 if (opponent[0].GetBall() != null)
 {
-    Console.WriteLine($"{opponent[0].GetStats().name} shoots...");
+    Console.WriteLine($"{opponent[0].stats.name} shoots...");
     opponent[0].ShootToBasket();
 }
 
