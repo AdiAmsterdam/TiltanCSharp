@@ -7,8 +7,8 @@ public class Player
     public static int opponentScore = 0;
     
     //Player Stats
-    PlayerStats stats = new PlayerStats();
-    PlayerSkills skills = new PlayerSkills();
+    public PlayerStats stats{get;}
+    PlayerSkills skills;
     private Ball hasball = null;
     public int score;
 
@@ -16,15 +16,10 @@ public class Player
     public Player(string name, bool isOpponent)
     {
         this.stats = new PlayerStats(name, isOpponent);
-       
-        this.stats.isOpponent = isOpponent;
+        this.skills = new PlayerSkills(stats.height, stats.weight);
         this.score = 0;
-        
-        this.skills.speed =Math.Clamp(30 - CalculateBMI(this.stats.height, this.stats.weight), 1, 10);
-        this.skills.shooting = new Random().Next(40, 95);
-        this.skills.snatching = new Random().Next(40, 95);
     }
-    public Player(string name, int height, int weight, bool isOpponent)
+    /*public Player(string name, int height, int weight, bool isOpponent)
     {
         if (string.IsNullOrEmpty(name))
         {
@@ -44,15 +39,7 @@ public class Player
         this.skills.shooting = new Random().Next(40, 95);
         this.skills.snatching = new Random().Next(40, 95);
     }
-
-    public PlayerStats Stats
-    {
-        get
-        {
-            return stats;
-        }
-        
-    }
+*/
 
     public PlayerSkills GetSkills()
     {
@@ -69,10 +56,7 @@ public class Player
         this.hasball = ball;
     }
 
-    float CalculateBMI(int height, int weight)
-    {
-        return weight / (float)Math.Pow(height, 2);
-    }
+    
 
     void Jump()
     {
