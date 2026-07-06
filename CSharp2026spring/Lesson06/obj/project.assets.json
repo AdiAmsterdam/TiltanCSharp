@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson06\\Lesson06.csproj",
+      "projectUniqueName": "C:\\Users\\adiam\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson06\\Lesson06.csproj",
       "projectName": "Lesson06",
-      "projectPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson06\\Lesson06.csproj",
+      "projectPath": "C:\\Users\\adiam\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson06\\Lesson06.csproj",
       "packagesPath": "C:\\Users\\adiam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adiam\\OneDrive\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson06\\obj\\",
+      "outputPath": "C:\\Users\\adiam\\Documents\\GitHub\\TiltanCSharp\\CSharp2026spring\\Lesson06\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adiam\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\adiam\\.dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Users\\adiam\\.dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
