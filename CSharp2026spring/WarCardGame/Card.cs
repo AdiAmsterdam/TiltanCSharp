@@ -2,31 +2,31 @@ namespace WarCardGame;
 
 public struct Card
 {
-    private Value value{get;}
-    private Shape? shape{get;}
-    private Color color{get;}
+    private CardValue value{get;}
+    private CardShape? shape{get;}
+    private CardColor color{get;}
 
     public Card(int value, int shape)
     {
-        this.value = (Value)value;
+        this.value = (CardValue)value;
         
-        if (this.value == Value.Joker)
+        if (this.value == CardValue.Joker)
         {
             this.shape = null;
         }
         else
         {
-            this.shape = (Shape)shape;
+            this.shape = (CardShape)shape;
         }
         
-        if (shape == 1 || shape == 2) this.color = Color.Red;
-        else this.color = Color.Black;
+        if (shape == 1 || shape == 2) this.color = CardColor.Red;
+        else this.color = CardColor.Black;
        
     }
 
-    public void ShowCard()
+    public void ShowCard()//Shows the card
     {
-        if (this.value == Value.Joker)
+        if (this.value == CardValue.Joker)
         {
             Console.WriteLine($"{this.color} {this.value}");
         }

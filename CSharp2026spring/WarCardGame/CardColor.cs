@@ -1,6 +1,6 @@
 namespace WarCardGame;
 
-public enum Color
+public enum CardColor
 {
     Red,
     Black

@@ -1,6 +1,6 @@
 namespace WarCardGame;
 
-public enum Shape
+public enum CardShape
 {
     Hearts = 1,
     Diamonds = 2,
