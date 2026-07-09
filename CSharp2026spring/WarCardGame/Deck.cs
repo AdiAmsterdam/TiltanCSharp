@@ -7,16 +7,16 @@ public class Deck
     private Queue<Card> deck;
     Random random = new Random();
     
-    //Create 2 constructors - one for a full deck one for an empty deck
-    public Deck()
+    // 2 constructors - one for a full deck one for an empty deck
+    public Deck() //Empty deck constructor
     {
         deck = new Queue<Card>();
     }
-    public Deck(bool fullDeck)
+    public Deck(bool fullDeck)//Full deck constructor
     {
         if (fullDeck) CreateDeck();
     }
-    private void CreateDeck()
+    private void CreateDeck()//Created a full 54 card deck
     {
         deck = new Queue<Card>();
         for (int s = 1; s <= cardShapeAmount; s++)
@@ -38,14 +38,18 @@ public class Deck
         }
     }
 
-    public void ArrangePlayersDecks(out Deck deck1, out Deck deck2) //Fills both decks with the same number of cards
+    public void ArrangePlayersDecks(Deck deck1, Deck deck2) //Fills both decks with the same number of cards
     {
-        deck1 = new Deck();
-        deck2 = new Deck();
+        while (this.deck.Count > 0)
+        {
+            deck1.AddCard(DrawCard());
+            deck2.AddCard(DrawCard());
+        }
     }
     public void ShuffleDeck() //Shuffles the cards
     {
-        int shuffleCount = random.Next(5, 20);
+        int shuffleCount = random.Next(5, 50);
+        Console.WriteLine("Shuffling the deck " + shuffleCount +  " times");
         Deck deck1 = new Deck();
         Deck deck2 = new Deck();
         Deck deck3 = new Deck();
@@ -72,9 +76,19 @@ public class Deck
         }
     }
 
-    public void ShuffleCards(Card card1, Card card2) //Shuffle two cards back to the winning deck
+    public void ShuffleCardsToDeck(Card card1, Card card2) //Shuffle two cards back to the winning deck
     {
-        return;
+        int shuffleCount = random.Next(1, 2);
+        if (shuffleCount == 1)
+        {
+            AddCard(card1);
+            AddCard(card2);
+        }
+        else
+        {
+            AddCard(card2);
+            AddCard(card1);
+        }
     }
 
     public Card DrawCard()//Draws a card

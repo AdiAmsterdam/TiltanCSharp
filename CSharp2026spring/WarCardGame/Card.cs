@@ -2,34 +2,39 @@ namespace WarCardGame;
 
 public struct Card
 {
-    private CardValue value{get;}
-    private CardShape? shape{get;}
-    private CardColor color{get;}
+    private CardValue cardValue{get;}
+    private CardShape? cardShape{get;}
+    private CardColor cardColor{get;}
 
-    public Card(int value, int shape)
+    public Card(int value, int shape) //Card constructor
     {
-        this.value = (CardValue)value;
+        this.cardValue = (CardValue)value;
         
-        if (this.value == CardValue.Joker)
+        if (this.cardValue == CardValue.Joker)
         {
-            this.shape = null;
+            this.cardShape = null;
         }
         else
         {
-            this.shape = (CardShape)shape;
+            this.cardShape = (CardShape)shape;
         }
         
-        if (shape == 1 || shape == 2) this.color = CardColor.Red;
-        else this.color = CardColor.Black;
+        if (shape == 1 || shape == 2) this.cardColor = CardColor.Red;
+        else this.cardColor = CardColor.Black;
        
     }
 
     public void ShowCard()//Shows the card
     {
-        if (this.value == CardValue.Joker)
+        if (this.cardValue == CardValue.Joker)
         {
-            Console.WriteLine($"{this.color} {this.value}");
+            Console.WriteLine($"{this.cardColor} {this.cardValue}");
         }
-        else Console.WriteLine($"{this.value} of {this.shape}");
+        else Console.WriteLine($"{this.cardValue} of {this.cardShape}");
+    }
+
+    public int getValue()
+    {
+        return cardValue.GetHashCode();
     }
 }
