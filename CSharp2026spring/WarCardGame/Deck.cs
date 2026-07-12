@@ -28,16 +28,7 @@ public class Deck
             }
         }
     }
-
-    public void ShowDeck() //make this a comment before submitting
-    {
-        Console.WriteLine(this.deck.Count);
-        while (this.deck.Count > 0)
-        {
-            this.deck.Dequeue().ShowCard();
-        }
-    }
-
+   
     public void ArrangePlayersDecks(Deck deck1, Deck deck2) //Fills both decks with the same number of cards
     {
         while (this.deck.Count > 0)
@@ -105,4 +96,14 @@ public class Deck
     {
         return this.deck.Count;
     }
+    
+    /* public void ShowDeck() //make this a comment before submitting
+    {
+        Console.WriteLine(this.deck.Count);
+        while (this.deck.Count > 0)
+        {
+            this.deck.Dequeue().ShowCard();
+        }
+    }
+    */
 }

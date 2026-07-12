@@ -33,7 +33,7 @@ public struct Card
         else Console.WriteLine($"{this.cardValue} of {this.cardShape}");
     }
 
-    public int getValue()
+    public int getCardValueHash()// Gets the hash code for the card value enum
     {
         return cardValue.GetHashCode();
     }

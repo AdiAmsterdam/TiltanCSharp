@@ -13,7 +13,6 @@ public class WarGame
         yourDeck = new Deck();
         opponentDeck = new Deck();
         fullDeck.ArrangePlayersDecks(yourDeck, opponentDeck);
-        PlayTurn(yourDeck, opponentDeck);
     }
 
     public void PlayGame()//Make the game run until someone is out of cards
@@ -58,12 +57,12 @@ public class WarGame
 
     bool IsCardsEqual(Card c1, Card c2)//Checks if the cards have the same value, true if it is, false if it isn't
     {
-        return c1.getValue() == c2.getValue();
+        return c1.getCardValueHash() == c2.getCardValueHash();
     }
 
     bool IsCardGreater(Card c1, Card c2)//Checks if c1's value is greater that c2's, true if it is, false if it isn't
     {
-        return c1.getValue() > c2.getValue();
+        return c1.getCardValueHash() > c2.getCardValueHash();
     }
     bool IsDeckEmpty(Deck deck)//Checks if deck is empty, true if it is, false if it isn't
     {
