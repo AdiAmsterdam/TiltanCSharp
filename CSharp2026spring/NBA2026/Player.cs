@@ -10,7 +10,7 @@ public class Player
     public PlayerStats stats{get;}
     PlayerSkills skills;
     private Ball hasball = null;
-    public int score;
+    private int? score { get; set; }
 
 
     public Player(string name, bool isOpponent)
