@@ -145,12 +145,12 @@ public class Player
     public void PrintStats()
     {
         Console.WriteLine($"Name: {this.stats.name}");
-        Console.WriteLine($"Height: {this.stats.height}");
+        Console.WriteLine($"Height: {this.stats.height:F2}");
         Console.WriteLine($"Weight: {this.stats.weight}");
         Console.WriteLine($"IsOpponent: {this.stats.isOpponent}");
         Console.WriteLine($"Score: {this.score}");
         Console.WriteLine($"hasball: {this.hasball}");
-        Console.WriteLine($"Speed: {this.skills.speed}");
+        Console.WriteLine($"Speed: {this.skills.speed:F1}");
         Console.WriteLine($"Shooting Skill: {this.skills.shooting}");
         Console.WriteLine($"Snatching Skill: {this.skills.snatching}");
         Console.WriteLine();

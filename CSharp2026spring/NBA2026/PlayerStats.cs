@@ -2,13 +2,14 @@ namespace NBA2026;
 
 public struct PlayerStats
 {
+        Random random = new Random();
         private string _name;
-        public int height{get; private set;}
+        public float height{get; private set;}
         public int weight {get; private set;}
         public bool isOpponent { get; private set; }
 
-        private static int MinHeight = 160;
-        private static int MaxHeight = 240;
+        private static float MinHeight = 1.60f;
+        private static float MaxHeight = 2.40f;
         private static int MinWeight = 80;
         private static int MaxWeight = 120;
 
@@ -35,8 +36,8 @@ public struct PlayerStats
         public PlayerStats(string name, bool isOpponent)
         {
             this.name = name;
-            this.height = new Random().Next(MinHeight, MaxHeight);
-            this.weight = new Random().Next(MinWeight, MaxWeight);
+            this.height =  MinHeight + (random.NextSingle() * (MaxHeight - MinHeight));
+            this.weight =  random.Next(MinWeight, MaxWeight);
             this.isOpponent = isOpponent;
         }
 }

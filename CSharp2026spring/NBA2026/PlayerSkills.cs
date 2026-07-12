@@ -9,14 +9,14 @@ public struct PlayerSkills
         public int snatching{get; private set;}
 
         
-        public PlayerSkills(int height, int weight)
+        public PlayerSkills(float height, int weight)
         {
                 speed = Math.Clamp(30 - CalculateBMI(height, weight), 1, 10);
                 shooting = new Random().Next(minStat, maxStat);
                 snatching = new Random().Next(minStat, maxStat);
         }
         
-        float CalculateBMI(int height, int weight)
+        float CalculateBMI(float height, int weight)
         {
                 return weight / (float)Math.Pow(height, 2);
         }
